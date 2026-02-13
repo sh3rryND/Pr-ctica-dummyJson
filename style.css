@@ -1,0 +1,132 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #e2e9f5;
+    padding: 20px;
+    color: #333;
+}
+
+
+.brand-name {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #111827;
+}
+
+/* Buscador */
+#buscador-producto {
+    display: block;
+    margin: 0 auto 25px auto;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* Layout principal */
+.layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+/* Catálogo */
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+/* Tarjetas */
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 12px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Imagen */
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 8px 0;
+}
+
+.card h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.Precio {
+    font-weight: bold;
+    color: #16a34a;
+}
+
+.Categoria,
+.Raiting,
+.Stock {
+    font-size: 13px;
+    color: #6b7280;
+    margin-top: 2px;
+}
+
+.detalle {
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 20px;
+    min-height: 250px;
+    animation: aparecer 0.3s ease;
+}
+
+.detalle h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Tabla */
+.detalle table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.detalle th {
+    text-align: left;
+    background: #f9fafb;
+    padding: 6px;
+    font-size: 14px;
+}
+
+.detalle td {
+    padding: 6px;
+    font-size: 14px;
+}
+
+.detalle img {
+    border-radius: 8px;
+}
+
+.espacio_detalle {
+    color: #6b7280;
+    text-align: center;
+    margin-top: 60px;
+}
+
